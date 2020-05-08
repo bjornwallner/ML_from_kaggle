@@ -23,8 +23,8 @@ tot_missing = 212 + 6 + 58
 class InvestigateThought(ThoughtExperiment):
     _hint = ("Does the dataset have a lot of missing values, or just a few?  Would we lose much "
              "information if we completely ignored the columns with missing entries?")
-    _solution = ("Since there are relatively few missing entries in the data (the column with "
-                 "the greatest percentage of missing values is missing less than 20% of its entries), "
+    _solution = ("Since there are relatively many missing entries in the data (the column with "
+                 "the greatest percentage of missing values is missing 20% of its entries), "
                  "we can expect that dropping columns is unlikely to yield good results.  This is "
                  "because we'd be throwing away a lot of valuable data, and so imputation will likely "
                  "perform better.")
